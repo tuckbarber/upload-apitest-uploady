@@ -1,0 +1,75 @@
+.FileBrowser {
+  align-items: stretch;
+  border: 1px solid #333;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  padding: 0 50px;
+  width: 500px;
+}
+
+.FileBrowser-toolbar {
+  background: linear-gradient(180deg, #f9f9f9, #f1f1f1);
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 5px 15px;
+  width: 100%;
+}
+
+.FileBrowser-toolbarButton {
+  border: transparent 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 6px;
+  padding: 6px;
+}
+
+.FileBrowser-toolbarButton:focus,
+.FileBrowser-toolbarButton:hover,
+.FileBrowser-toolbarButton.is-selected,
+.is-active > .FileBrowser-toolbarButton {
+  background: #fff;
+  border-color: #cdd5da;
+  color: #111;
+  cursor: pointer;
+  outline: 0;
+}
+
+.FileViewer {
+  border: 1px solid #333;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.FileViewer-list {
+  box-sizing: border-box;
+  flex: 2;
+  padding: 10px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.FileViewer-list.is-hovered {
+  background: #ccf;
+}
+
+.FileViewer-listRow {
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: table;
+  padding: 7px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.FileViewer-listRow:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.FileViewer-listRow--upload {
+  border: 1px solid #77c;
+}
